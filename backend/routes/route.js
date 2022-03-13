@@ -9,7 +9,7 @@ const fs = require('fs');
 
 
 
-let assetsPath = '/Users/nananabatman/Desktop/TitansFinance/scratchTests/MetaDeSoClub/backend/assets';
+let assetsPath = 'assets_path';
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, assetsPath);
