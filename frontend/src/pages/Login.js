@@ -9,6 +9,8 @@ import { AddressContext } from "../context/AddressContext";
 import { useContext } from "react";
 import { useHistory } from 'react-router';
 import { CCContext } from "../context/CC";
+import '../App.css'
+
 
 
 export function Login() {
@@ -62,9 +64,9 @@ export function Login() {
             addAddress(add)
             toast.success(`User NFT contract Address = ${add}`, {
                 position: "bottom-center",
-                hideProgressBar: false,
-                pauseOnHover: true,
-                draggable: true,
+                hideProgressBar: true,
+                pauseOnHover: false,
+                draggable: false,
                 progress: undefined,
             });
 
@@ -80,9 +82,9 @@ export function Login() {
             toast.error('Error', {
                 position: "bottom-center",
                 autoClose: 5000,
-                hideProgressBar: false,
-                pauseOnHover: true,
-                draggable: true,
+                hideProgressBar: true,
+                pauseOnHover: false,
+                draggable: false,
                 progress: undefined,
             });
         }
@@ -129,12 +131,13 @@ export function Login() {
                 <ToastContainer
                     position="bottom-center"
                     autoClose={5000}
-                    hideProgressBar={false}
+                    hideProgressBar={true}
                     newestOnTop={false}
                     rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
+
+                    style={{ fontSize: '2rem' }}
+
+
                 />
 
                 {/* <div className="container">

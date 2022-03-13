@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AddressContext } from "../context/AddressContext";
 import { useContext } from "react";
 import { useHistory } from 'react-router';
+import '../App.css'
 
 
 export function Whitelist() {
@@ -83,6 +84,8 @@ export function Whitelist() {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
+                    style={{ fontSize: '2rem' }}
+
                 />
                 <br />
                 <br />
