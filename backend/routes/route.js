@@ -9,7 +9,7 @@ const fs = require('fs');
 
 
 
-let assetsPath = 'add_path_to_assets_folder_here';
+let assetsPath = '/Users/nananabatman/Desktop/TitansFinance/scratchTests/MetaDeSoClub/backend/assets';
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, assetsPath);
@@ -25,7 +25,7 @@ var upload = multer({
 });
 
 router
-    .post('/upload', upload.single('image'), function(req, res){
+    .post('/upload', upload.single('image'), async function(req, res){
         try {
             // ideally we send the auth bearer token and api key here through the frontend
             let data = new formData();
@@ -50,13 +50,12 @@ router
     
             let result;
 
-            axios(config)
-            .then(function (response) {
-                result = response.data;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+            result = await axios(config).then(function (response) {
+                    return response.data;
+                })
+                .catch(function (error) {
+                    return error;
+                });
     
             return res.status(200).json({
                 success: true,
