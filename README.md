@@ -1,6 +1,8 @@
 # MetaDeSoClub
 
+# Demo Deployment details 
 
+- https://0002h1osfi35hmgbsbjv590igu7thlu9fk1j91cf8c2l584m2eve5co.siasky.net/
 
 # Rinkeby Testnet Deployment Details 
 
