@@ -4,7 +4,6 @@ import { SmallAvatar } from '../images/avatars'
 import { TweetCommentIcon, TweetRetweetIcon, TweetLikeIcon, TweetSendIcon } from '../images/svg/svgs';
 
 export const StatusCard = ({ tweet }) => {
-
     return (
         <div className="status-card">
             <div className="left">

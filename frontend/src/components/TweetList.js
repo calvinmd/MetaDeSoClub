@@ -4,10 +4,11 @@ import { GlobalContext } from '../context/GlobalState'
 
 export const TweetList = () => {
     const { tweets } = useContext(GlobalContext);
+    console.log(tweets)
 
     return (
         <>
-            {tweets.map((tweet, index) => (<TweetCard key={index} tweet={tweet} />))}
+            {tweets.map((tweet, index) => (<TweetCard key={index} tweet={tweet} />)).reverse()}
         </>
     )
 }

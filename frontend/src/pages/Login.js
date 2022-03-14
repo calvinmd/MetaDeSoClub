@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../styles/Main.css';
 import Web3 from 'web3'
-import { publicKey, privateKey, factory_address, factory_abi, nft_abi } from './config'
+import { factory_address, factory_abi, nft_abi } from './config'
 import { getAccount } from "../components/getAccount";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -14,7 +14,7 @@ export default (state, action) => {
                 },
                 tweet: {
                     content: action.payload,
-                    image: "",
+                    image: "action.payload",
                     time: '10m',
                     comments: '100',
                     retweets: '320',

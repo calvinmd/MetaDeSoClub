@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 export default class TweetCard extends Component {
     tweet = this.props.tweet;
 
+
     profImageurl = 'https://ipfs.io/ipfs/QmZGQA92ri1jfzSu61JRaNQXYg1bLuM7p8YT83DzFA2KLH?filename=Chainlink_Knight.png';
 
     handleRouting = (e) => {
+        console.log(this.tweet)
         // e.preventDefault();
         // debugger
         // this.props.history.push('data')

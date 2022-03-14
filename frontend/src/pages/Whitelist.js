@@ -7,7 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AddressContext } from "../context/AddressContext";
 import { useContext } from "react";
-import { useHistory } from 'react-router';
 import '../App.css'
 
 
@@ -16,6 +15,7 @@ export function Whitelist() {
     // const routerHistory = useHistory();
 
     const [accounts, setAccounts] = useState('');
+    //eslint-disable-next-line
     const { addAddress } = useContext(AddressContext)
     getAccount().then((account) => {
         setAccounts(account);
